@@ -29,11 +29,23 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@tailwindcss/forms": "^0.5.7",
+    "chart.js": "^4.4.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "flowbite": "^2.2.1",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.25.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.0"
   },
@@ -48,6 +60,7 @@
     "@storybook/test": "^7.6.9",
     "@types/node": "^20.11.5",
     "@types/react": "^18.2.43",
+    "@types/react-datepicker": "^4.19.4",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
