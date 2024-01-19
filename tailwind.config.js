@@ -1,9 +1,72 @@
-import formsPlugin from "@tailwindcss/forms";
+import formsPlugin from '@tailwindcss/forms';
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-    theme: {
-        extend: {},
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        'Yellow-50': '#fffcf6',
+        'Yellow-100': '#fff7e3',
+        'Yellow-200': '#fff3d6',
+        'Yellow-300': '#ffeec3',
+        'Yellow-400': '#ffeab7',
+        'Yellow-500': '#ffe5a5',
+        'Yellow-600': '#e8d096',
+        'Yellow-700': '#b5a375',
+        'Yellow-800': '#8c7e5b',
+        'Yellow-900': '#6b6045',
+
+        'Green-50': '#f6fefc',
+        'Green-100': '#e3fdf6',
+        'Green-200': '#d6fbf2',
+        'Green-300': '#c3faec',
+        'Green-400': '#b8f9e8',
+        'Green-500': '#a6f7e2',
+        'Green-600': '#97e1ce',
+        'Green-700': '#76afa0',
+        'Green-800': '#5b887c',
+        'Green-900': '#46685f',
+
+        'Purple-50': '#f0e9ff',
+        'Purple-100': '#cfbbff',
+        'Purple-200': '#b89bff',
+        'Purple-300': '#976dfe',
+        'Purple-400': '#8351fe',
+        'Purple-500': '#6425fe',
+        'Purple-600': '#5b22e7',
+        'Purple-700': '#471ab4',
+        'Purple-800': '#37148c',
+        'Purple-900': '#2a106b',
+
+        'Blue-50': '#f5f9ff',
+        'Blue-100': '#e1edfd',
+        'Blue-200': '#d2e5fd',
+        'Blue-300': '#bed9fc',
+        'Blue-400': '#b1d1fb',
+        'Blue-500': '#9ec6fa',
+        'Blue-600': '#90b4e4',
+        'Blue-700': '#708db2',
+        'Blue-800': '#576d8a',
+        'Blue-900': '#425369',
+
+        'Grey-50': '#eaeaea',
+        'Grey-100': '#bebebe',
+        'Grey-200': '#9e9e9e',
+        'Grey-300': '#727272',
+        'Grey-400': '#565656',
+        'Grey-500': '#2c2c2c',
+        'Grey-600': '#282828',
+        'Grey-700': '#1f1f1f',
+        'Grey-800': '#181818',
+        'Grey-900': '#121212',
+
+        // addon-colors
+        'addon-1': '#00A053',
+        'addon-2': '#DB6757',
+        'addon-3': '#92ADBD',
+        'addon-4': '#C9E0EF',
+      },
     },
-    plugins: [formsPlugin],
+  },
+  plugins: [formsPlugin, require('flowbite/plugin')],
 };

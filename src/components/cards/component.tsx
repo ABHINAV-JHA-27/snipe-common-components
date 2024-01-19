@@ -22,7 +22,7 @@ const Component: React.FC<CardProps> = ({
   borderColor,
   borderWidth,
 }) => {
-  const borderRadiusClass = `rounded-${borderRadius}px` || 'rounded-[3px]';
+  const borderRadiusClass = `rounded-[${borderRadius}px]` || 'rounded-[3px]';
   return (
     <div
       className={clsxMerge(
