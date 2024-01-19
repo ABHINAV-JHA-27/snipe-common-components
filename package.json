@@ -81,5 +81,15 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-dts": "^3.7.1"
-  }
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "react-component",
+    "tailwindcss",
+    "typescript",
+    "storybook",
+    "snipe-common-components",
+    "snipe"
+  ]
 }
