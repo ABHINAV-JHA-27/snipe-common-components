@@ -20,6 +20,12 @@ Install the Snipe React Components library via npm:
 npm install snipe-common-components
 ```
 
+And add this line at the top of the Main entry File (App.tsx / Main.tsx)
+
+```bash
+import "snipe-common-components/dist/style.css";
+```
+
 ### Usage
 
 Import and use the components in your React application:
@@ -47,14 +53,14 @@ To get started with development, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ABHINAV-JHA-27/snipe-common-components.git
+   git clone https://github.com/snipe-ai/snipe-common-components.git
    ```
 
 2. Install dependencies:
 
    ```bash
    cd snipe-common-components
-   npm install
+   npm ci
    ```
 
 3. Run the development environment with Storybook:
