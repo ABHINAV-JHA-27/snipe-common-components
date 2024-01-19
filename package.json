@@ -91,5 +91,8 @@
     "storybook",
     "snipe-common-components",
     "snipe"
-  ]
+  ],
+  "author": {
+    "name": "Abhinav Jha"
+  }
 }
