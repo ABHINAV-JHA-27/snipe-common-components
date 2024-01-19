@@ -22,11 +22,13 @@ const Component: React.FC<CardProps> = ({
   borderColor,
   borderWidth,
 }) => {
+  const borderRadiusClass = `rounded-${borderRadius}px` || 'rounded-[3px]';
   return (
     <div
       className={clsxMerge(
         bgColor ? bgColor : 'bg-white',
-        borderRadius ? `rounded-[${borderRadius}px]` : 'rounded-[3px]',
+        // borderRadius ? `rounded-[${borderRadius}px]` : 'rounded-[3px]',
+        borderRadiusClass,
         padding ? padding : 'p-[12px]',
         borderColor ? borderColor : 'border-[#eaeaea]',
         borderWidth ? borderWidth : 'border-[2px]',
