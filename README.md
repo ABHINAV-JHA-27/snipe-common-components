@@ -75,12 +75,6 @@ To get started with development, follow these steps:
 
 ## NPM Scripts
 
-- **dev**: Run Rollup in watch mode for development.
-
-  ```bash
-  npm run dev
-  ```
-
 - **build**: Build the library using Rollup for production.
 
   ```bash
