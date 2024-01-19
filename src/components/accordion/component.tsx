@@ -1,8 +1,8 @@
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import clsx from 'clsx';
 import React, { useState } from 'react';
 import { CommonProps } from '../../@types/common';
+import { clsxMerge } from '../../common/utils/classNameUtils';
 
 export interface AccordionProps
   extends React.HTMLAttributes<HTMLDivElement>,
@@ -30,7 +30,7 @@ const Component: React.FC<AccordionProps> = ({
   };
 
   return (
-    <div className=" rounded-[6px] border-Green-600 bg-Green-200 border-2 p-4 w-full">
+    <div className="rounded-[6px] border-Green-600 bg-Green-200 border-2 p-4 w-full">
       <div className="flex w-full justify-between ">
         {/* <div className='flex gap-2 items-center'>
                 <div className=''>
@@ -54,7 +54,7 @@ const Component: React.FC<AccordionProps> = ({
         {customComponent}
         <div className="flex flex-col gap-2 ">
           <button
-            className={clsx(
+            className={clsxMerge(
               'flex items-center gap-2 justify-center h-[18px] font-[700] self-end text-white font-DMsans  rounded-[3px] w-[91px] py-[15px] px-[9px] bg-addon-2'
             )}
           >

@@ -1,5 +1,4 @@
 import { CommonProps } from '../../@types/common';
-import clsx from 'clsx';
 
 export interface ToggleProps
   extends React.HTMLAttributes<HTMLDivElement>,
@@ -12,11 +11,7 @@ export interface ToggleProps
 const Component: React.FC<ToggleProps> = ({ textLeft, textRight }) => {
   return (
     <>
-      <div
-        className={clsx(
-          ' border-[1px]  bg-Purple-50 rounded-[24px] border-Purple-100 flex gap-2 py-3 px-[6px]'
-        )}
-      >
+      <div className="border-[1px] bg-Purple-50 rounded-[24px] border-Purple-100 flex gap-2 py-3 px-[6px]">
         <span className="font-[500] text-[18px] text-Purple-700">
           {textLeft}
         </span>
