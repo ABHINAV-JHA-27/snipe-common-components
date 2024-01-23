@@ -46,7 +46,7 @@ const Component: React.FC<AuthProps> = ({
   submitButtonColor,
 }) => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full flex items-center justify-center">
       {type === 'login' ? (
         <Login
           googleSigninVisible={googleSigninVisible}
