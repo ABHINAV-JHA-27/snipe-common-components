@@ -50,9 +50,9 @@ const Component: React.FC<SideBarProps> = ({
   return (
     <div
       className={clsxMerge(
-        'ss text-[16px] h-screen flex flex-col justify-between pb-[50px] sticky left-0 top-0',
+        'ss text-[16px] h-screen flex flex-col justify-between pb-[50px] sticky left-0 top-0 w-[15vw] bg-[#141627]',
         backgroundColor ? backgroundColor : 'bg-[#141627]',
-        width ? width : 'w-[15%]'
+        width ? width : 'w-[15vw]'
       )}
     >
       <div>
@@ -60,7 +60,7 @@ const Component: React.FC<SideBarProps> = ({
           {logo ? (
             <img
               src={logo}
-              alt="slc"
+              alt="logo"
               className={clsxMerge(
                 'w-[80%] object-contain',
                 logoStyle ? logoStyle : ''
@@ -99,7 +99,7 @@ const Component: React.FC<SideBarProps> = ({
                   'w-[15px] h-[15px]',
                   itemIconStyle ? itemIconStyle : ''
                 )}
-                alt="users"
+                alt={item.text}
               />
               {item.text}
             </li>
