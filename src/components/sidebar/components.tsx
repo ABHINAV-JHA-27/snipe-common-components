@@ -50,9 +50,9 @@ const Component: React.FC<SideBarProps> = ({
   return (
     <div
       className={clsxMerge(
-        'ss text-[16px] h-screen flex flex-col justify-between pb-[50px] sticky left-0 top-0 w-[15vw] bg-[#141627]',
-        backgroundColor ? backgroundColor : 'bg-[#141627]',
-        width ? width : 'w-[15vw]'
+        'ss text-[16px] h-screen flex flex-col justify-between pb-[50px] sticky left-0 top-0 w-[15vw]',
+        backgroundColor ? `bg-[${backgroundColor}]` : 'bg-[#141627]',
+        width ? `[w-${width}]` : 'w-[16vw]'
       )}
     >
       <div>
